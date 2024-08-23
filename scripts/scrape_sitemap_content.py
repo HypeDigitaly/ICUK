@@ -749,7 +749,7 @@ def initialize_json_files():
                 "metadataFields": ["FirstName", "LastName", "Role"]
             },
             "name": "all_contacts",
-            "tags": ["Contacts"]
+            "tags": ["Contact"]
         },
         "payloads/all_documents.json": {
             "schema": {
