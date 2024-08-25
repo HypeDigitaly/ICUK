@@ -34,7 +34,7 @@ SECTIONS = {
     "References": ["https://icuk.cz/reference-sitemap.xml"],
     "SuccessStories": ["https://icuk.cz/success-story-sitemap.xml"],
     "Events": ["https://icuk.cz/udalost-sitemap.xml"],
-    "Podcasts": ["https://icuk.cz/podcast-sitemap.xml"],
+    "": ["https://icuk.cz/podcast-sitemap.xml"],
     "Articles": ["https://icuk.cz/post-sitemap.xml"]
 }
 
@@ -253,8 +253,8 @@ def update_events_file(event):
     else:
         logger.info(f"Událost '{event['Name']}' na datum {event['Date']} již existuje, přeskakuji.")
 
-def update_podcasts_file(podcast):
-    filename = "payloads/all_podcasts.json"
+def update__file(podcast):
+    filename = "payloads/all_.json"
     
     try:
         with open(filename, 'r', encoding='utf-8') as f:
@@ -272,8 +272,7 @@ def update_podcasts_file(podcast):
         data = {
             "data": {
                 "schema": {
-                    "searchableFields": ["SourceURL", "YoutubeURL", "Summary"],
-                    "metadataFields": ["SourceURL"]
+                    "searchableFields": ["SourceURL", "YoutubeURL", "Summary"]
                 },
                 "name": "all_podcasts",
                 "tags": ["Podcasts"],
@@ -749,7 +748,7 @@ def initialize_json_files():
                 "metadataFields": ["FirstName", "LastName", "Role"]
             },
             "name": "all_contacts",
-            "tags": ["Contacts"]
+            "tags": ["Contact"]
         },
         "payloads/all_documents.json": {
             "schema": {
