@@ -42,6 +42,10 @@
   background-color: #F5A524;
 }
 
+.c-kDxFae > .c-iBVlvN {
+  padding: 0 var(--space-5) 0 65px;
+}
+
 .vfrc-chat-dialog {
   flex: 1 1 0px;
   overflow: hidden;
@@ -90,7 +94,7 @@
 
 .vfrc-button--secondary {
   display: inline-block;
-  border: 1px solid #0000ff;
+  border: 1px solid #F5A524;
   font-size: 16px;
   font-weight: 500;
   border-radius: 20px;
@@ -220,7 +224,15 @@
 }
 
 .vfrc-proactive-message {
-  border: blue 1px solid;
+  border: #F5A524 1px solid;
+}
+
+.c-kIbiaN-iiTsXc-size-small.c-kIbiaN-igKTkkE-css {
+  width: 35px;
+  height: 35px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: #ffffff;
 }
 
 /* color text area */
