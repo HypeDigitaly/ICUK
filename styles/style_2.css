@@ -27,7 +27,7 @@
     height: 84px !important;
     border-radius: 42px !important;
     border: 2px solid #000000 !important;
-    box-shadow: none !important;
+    box-shadow: 0 0 0 2px #000000 !important;
     object-fit: contain !important;
     transition: all 0.3s ease !important;
   }
@@ -44,6 +44,7 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    border: none !important;
   }
   
   /* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
