@@ -21,30 +21,38 @@
     cursor: pointer !important;
   }
   
-  /* Target both SVG and IMG when in closed state */
-  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g {
+  /* Target both SVG and IMG when in closed state - STRENGTHENED BORDER */
+  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g,
+  .f6dof8t.f6dof8v.f6dof8g {
     width: 84px !important;
     height: 84px !important;
     border-radius: 42px !important;
-    border: 2px solid #000000 !important;
-    box-shadow: 0 0 0 2px #000000 !important;
+    border: 4px solid #000000 !important; /* Increased from 2px to 4px */
+    box-shadow: 0 0 0 3px #000000 !important; /* Increased from 2px to 3px */
     object-fit: contain !important;
     transition: all 0.3s ease !important;
+    position: relative !important;
+    z-index: 2 !important;
   }
   
-  /* Hover effect for the image/avatar itself */
-  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover img.f6dof8t.f6dof8v.f6dof8g {
-    opacity: 1 !important;
+  /* Additional selector for the image itself without relying on :has() */
+  img[src*="amazonaws.com"],
+  img[alt="open chat"] {
+    border: 4px solid #000000 !important;
+    border-radius: 42px !important;
+    box-shadow: 0 0 0 3px #000000 !important;
   }
   
-  /* Container for the image/svg */
+  /* Container for the image/svg - ADDED BORDER */
   .f6dof86.f6dof88 {
     width: 84px !important;
     height: 84px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    border: none !important;
+    border: 4px solid #000000 !important; /* Added border here too */
+    border-radius: 42px !important;
+    overflow: hidden !important;
   }
   
   /* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
