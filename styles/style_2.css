@@ -10,8 +10,8 @@
     height: 105px !important;
     transition: all 0.3s ease !important;
     animation: none !important;
-    background-color: #FFFFFF !important;
-    border: 2px solid #FFCA00 !important;
+    background-color: transparent !important;
+    border: none !important;
     border-radius: 52.5px !important;
   }
   
@@ -26,7 +26,7 @@
     width: 105px !important;
     height: 105px !important;
     border-radius: 52.5px !important;
-    border: none !important;
+    border: 2px solid #000000 !important;
     box-shadow: none !important;
     object-fit: contain !important;
     transition: all 0.3s ease !important;
