@@ -6,13 +6,13 @@
   
   /* Button container - default state (when closed) */
   .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
-    width: 105px !important;
-    height: 105px !important;
+    width: 84px !important;
+    height: 84px !important;
     transition: all 0.3s ease !important;
     animation: none !important;
     background-color: transparent !important;
     border: none !important;
-    border-radius: 52.5px !important;
+    border-radius: 42px !important;
   }
   
   /* Hover effect for the button container */
@@ -23,9 +23,9 @@
   
   /* Target both SVG and IMG when in closed state */
   .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g {
-    width: 105px !important;
-    height: 105px !important;
-    border-radius: 52.5px !important;
+    width: 84px !important;
+    height: 84px !important;
+    border-radius: 42px !important;
     border: 2px solid #000000 !important;
     box-shadow: none !important;
     object-fit: contain !important;
@@ -39,8 +39,8 @@
   
   /* Container for the image/svg */
   .f6dof86.f6dof88 {
-    width: 105px !important;
-    height: 105px !important;
+    width: 84px !important;
+    height: 84px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
