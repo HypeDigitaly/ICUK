@@ -1,212 +1,203 @@
 /* Main container positioning */
 ._1emja3f9 {
-    bottom: 30px !important;
-    right: 30px !important;
-  }
-  
-  /* Button container - default state (when closed) */
-  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
-    width: 84px !important;
-    height: 84px !important;
-    transition: all 0.3s ease !important;
-    animation: none !important;
-    background-color: transparent !important;
-    border: none !important;
-    border-radius: 42px !important;
-  }
-  
-  /* Hover effect for the button container */
-  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover {
-    opacity: 0.7 !important;
-    cursor: pointer !important;
-  }
-  
-  /* Target both SVG and IMG when in closed state - STRENGTHENED BORDER */
-  .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g,
-  .f6dof8t.f6dof8v.f6dof8g {
-    width: 84px !important;
-    height: 84px !important;
-    border-radius: 42px !important;
-    border: 4px solid #000000 !important; /* Increased from 2px to 4px */
-    box-shadow: 0 0 0 3px #000000 !important; /* Increased from 2px to 3px */
-    object-fit: contain !important;
-    transition: all 0.3s ease !important;
-    position: relative !important;
-    z-index: 2 !important;
-  }
-  
-  /* Additional selector for the image itself without relying on :has() */
-  img[src*="amazonaws.com"],
-  img[alt="open chat"] {
-    border: 4px solid #000000 !important;
-    border-radius: 42px !important;
-    box-shadow: 0 0 0 3px #000000 !important;
-  }
-  
-  /* Container for the image/svg - ADDED BORDER */
-  .f6dof86.f6dof88 {
-    width: 84px !important;
-    height: 84px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border: 4px solid #000000 !important; /* Added border here too */
-    border-radius: 42px !important;
-    overflow: hidden !important;
-  }
-  
-  /* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
-  button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
-    width: 42px !important;
-    height: 42px !important;
-    background-color: #FFCA00 !important;
-    border-radius: 9999px !important;
-    margin-right: 0px !important;
-    position: relative !important;
-    overflow: hidden !important;
-    transition: none !important;
-    animation: none !important;
-    transform: none !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  /* POUZE šipka v otevřeném stavu */
-  button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-    width: 24px !important;
-    height: 24px !important;
-    transform: none !important;
-    object-fit: contain !important;
-  }
-  
-  /* Translation overlay styles - updated approach */
-  /* Remove backgrounds and hide original text */
-  .vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4,
-  button[label="Start new chat"],
-  button[label="Cancel"],
-  #vfrc-start-chat {
-    background: transparent !important;
-    border: none !important;
-    color: transparent !important;
-    position: relative !important;
-  }
-  
-  /* Hide all original text contents */
-  .vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4 span,
-  button[label="Start new chat"] span,
-  button[label="Cancel"] span,
-  #vfrc-start-chat span {
-    display: none !important;
-  }
-  
-  /* Start new chat translation - all variations */
-  button[label="Start new chat"],
-  #vfrc-start-chat {
-    background-color: #FFCA00 !important;
-    border-radius: 4px !important;
-    padding: 10px 20px !important;
-  }
-  
-  button[label="Start new chat"]::before,
-  #vfrc-start-chat::before {
-    content: "Začít nový chat" !important;
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    color: white !important;
-    white-space: nowrap !important;
-    pointer-events: none !important;
-    z-index: 2 !important;
-    font-family: Arial, sans-serif !important;
-    font-size: 16px !important;
-  }
-  
-  /* Cancel translation */
-  button[label="Cancel"] {
-    background-color: #FFCA00 !important;
-    border-radius: 4px !important;
-    padding: 10px 20px !important;
-  }
-  
-  button[label="Cancel"]::before {
-    content: "Zavřít" !important;
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    color: white !important;
-    white-space: nowrap !important;
-    pointer-events: none !important;
-    z-index: 2 !important;
-    font-family: Arial, sans-serif !important;
-    font-size: 16px !important;
-  }
-  
-  /* Message text alignment */
-  .vfrc-message {
-    text-align: left !important;
-    justify-content: flex-start !important;
-  }
-  
-  /* Ensure message content is also left-aligned */
-  .vfrc-message > * {
-    text-align: left !important;
-    margin-left: 0 !important;
-  }
-  
-  /* In case there are any flex containers within the message */
-  .vfrc-message div {
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-  }
-  
-  /* Aktualizovaný styl pro "Chat has ended" text */
-  div[class*="1o69oyc2"] {
-    color: transparent !important;
-    position: relative !important;
-    text-align: center !important;  /* Přidáno pro centrování */
-    width: 100% !important;  /* Zajistí plnou šířku pro centrování */
-  }
-  
-  div[class*="1o69oyc2"]::before {
-    content: "Chat byl ukončen" !important;
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    color: #FFCA00 !important;
-    white-space: nowrap !important;
-    pointer-events: none !important;
-    z-index: 2 !important;
-    font-family: "Open Sans", Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    line-height: 1.5 !important;
-    letter-spacing: normal !important;
-    display: block !important;
-    text-align: center !important;
-  }
-  
-  /* ADDED TEXT ALIGNMENT FIX */
-  /* For all chat message containers */
-  .vfrc-message,
-  div[class*="vfrc-chat-dialog"],
-  div[class*="knxm730"],
-  div[class*="_15emaa"],
-  div[class*="vfrc-user-response"],
-  div[class*="vfrc-system-response"],
-  div[class*="g3dqfd"],
-  div[class*="response-content"],
-  div[class*="streaming-response-container"] {
-    text-align: left !important;
-  }
-  
-  /* For text elements */
-  .vfrc-message span,
-  .vfrc-message p,
-  div[class*="vfrc-message"] * {
-    text-align: left !important;
-  }
-  
+  bottom: 30px !important;
+  right: 30px !important;
+}
+
+/* Button container - default state (when closed) */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
+  width: 84px !important;
+  height: 84px !important;
+  transition: all 0.3s ease !important;
+  animation: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 42px !important;
+}
+
+/* Hover effect for the button container */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover {
+  opacity: 0.7 !important;
+  cursor: pointer !important;
+}
+
+/* Target both SVG and IMG when in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g {
+  width: 84px !important;
+  height: 84px !important;
+  border-radius: 42px !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 0 0 0 2px #000000 !important;
+  object-fit: contain !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Hover effect for the image/avatar itself */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover img.f6dof8t.f6dof8v.f6dof8g {
+  opacity: 1 !important;
+}
+
+/* Container for the image/svg */
+.f6dof86.f6dof88 {
+  width: 84px !important;
+  height: 84px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+}
+
+/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
+  width: 42px !important;
+  height: 42px !important;
+  background-color: #FFCA00 !important;
+  border-radius: 9999px !important;
+  margin-right: 0px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* POUZE šipka v otevřeném stavu */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
+  width: 24px !important;
+  height: 24px !important;
+  transform: none !important;
+  object-fit: contain !important;
+}
+
+/* Translation overlay styles - updated approach */
+/* Remove backgrounds and hide original text */
+.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4,
+button[label="Start new chat"],
+button[label="Cancel"],
+#vfrc-start-chat {
+  background: transparent !important;
+  border: none !important;
+  color: transparent !important;
+  position: relative !important;
+}
+
+/* Hide all original text contents */
+.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4 span,
+button[label="Start new chat"] span,
+button[label="Cancel"] span,
+#vfrc-start-chat span {
+  display: none !important;
+}
+
+/* Start new chat translation - all variations */
+button[label="Start new chat"],
+#vfrc-start-chat {
+  background-color: #FFCA00 !important;
+  border-radius: 4px !important;
+  padding: 10px 20px !important;
+}
+
+button[label="Start new chat"]::before,
+#vfrc-start-chat::before {
+  content: "Začít nový chat" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Cancel translation */
+button[label="Cancel"] {
+  background-color: #FFCA00 !important;
+  border-radius: 4px !important;
+  padding: 10px 20px !important;
+}
+
+button[label="Cancel"]::before {
+  content: "Zavřít" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Message text alignment */
+.vfrc-message {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
+/* Ensure message content is also left-aligned */
+.vfrc-message > * {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* In case there are any flex containers within the message */
+.vfrc-message div {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+/* Aktualizovaný styl pro "Chat has ended" text */
+div[class*="1o69oyc2"] {
+  color: transparent !important;
+  position: relative !important;
+  text-align: center !important;  /* Přidáno pro centrování */
+  width: 100% !important;  /* Zajistí plnou šířku pro centrování */
+}
+
+div[class*="1o69oyc2"]::before {
+  content: "Chat byl ukončen" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #FFCA00 !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  font-family: "Open Sans", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: normal !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* ADDED TEXT ALIGNMENT FIX */
+/* For all chat message containers */
+.vfrc-message,
+div[class*="vfrc-chat-dialog"],
+div[class*="knxm730"],
+div[class*="_15emaa"],
+div[class*="vfrc-user-response"],
+div[class*="vfrc-system-response"],
+div[class*="g3dqfd"],
+div[class*="response-content"],
+div[class*="streaming-response-container"] {
+  text-align: left !important;
+}
+
+/* For text elements */
+.vfrc-message span,
+.vfrc-message p,
+div[class*="vfrc-message"] * {
+  text-align: left !important;
+}
