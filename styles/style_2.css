@@ -85,10 +85,14 @@ div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
   flex-shrink: 0 !important;
 }
 
-/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
+/* BUTTON IN OPENED STATE - yellow circle with arrow - 50% smaller than closed state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
-  width: 42px !important;
-  height: 42px !important;
+  width: 36px !important;  /* 50% of 72px */
+  height: 36px !important; /* 50% of 72px */
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
   background-color: #FFCA00 !important;
   border-radius: 9999px !important;
   margin-right: 0px !important;
@@ -102,10 +106,10 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   justify-content: center !important;
 }
 
-/* POUZE šipka v otevřeném stavu */
+/* Arrow icon in opened state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 24px !important;
-  height: 24px !important;
+  width: 18px !important;  /* Proportionally reduced */
+  height: 18px !important; /* Proportionally reduced */
   transform: none !important;
   object-fit: contain !important;
 }
