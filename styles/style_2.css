@@ -6,13 +6,18 @@
 
 /* Button container - default state (when closed) */
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 {
-  width: 84px !important;
-  height: 84px !important;
+  width: 72px !important;
+  height: 72px !important;
   transition: all 0.3s ease !important;
   animation: none !important;
   background-color: transparent !important;
   border: none !important;
-  border-radius: 42px !important;
+  border-radius: 36px !important;
+  overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
 }
 
 /* Hover effect for the button container */
@@ -24,13 +29,19 @@
 /* Target both SVG and IMG when in closed state */
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
-  width: 84px !important;
-  height: 84px !important;
-  border-radius: 42px !important;
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 36px !important;
   border: 2px solid #000000 !important;
   box-shadow: none !important;
   object-fit: contain !important;
+  object-position: center !important;
   transition: all 0.3s ease !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
 
 /* Hover effect for the image/avatar itself */
@@ -41,12 +52,17 @@
 
 /* Container for the image/svg */
 .f6dof87.f6dof89,
-.f6dof86.f6dof88 {
-  width: 84px !important;
-  height: 84px !important;
+.f6dof86.f6dof88,
+div.f6dof87.f6dof89,
+div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
+  width: 72px !important;
+  height: 72px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
