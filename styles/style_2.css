@@ -106,7 +106,14 @@ div.f6dof87.f6dof89:has(img[alt="open chat"]) {
 }
 
 /* ================= OPENED STATE STYLING ================= */
-/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
+/* Main container in opened state */
+div._1emja3f9:has(#voiceflow-chat):has(button:has(svg[viewBox="0 0 32 32"])) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+}
+
+/* Button in opened state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
   width: 36px !important;
   height: 36px !important;
@@ -123,6 +130,9 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  margin-top: 15px !important;
+  align-self: flex-end !important;
+  margin-right: 15px !important;
 }
 
 /* Arrow icon in opened state */
@@ -131,6 +141,26 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   height: 18px !important;
   transform: none !important;
   object-fit: contain !important;
+}
+
+/* Additional selectors for parent container in opened state */
+div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+}
+
+/* Container for svg in opened state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
 }
 
 /* ================= OTHER STYLING ================= */
