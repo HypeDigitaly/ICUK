@@ -5,7 +5,7 @@
 }
 
 /* Button container - default state (when closed) */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) {
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 {
   width: 84px !important;
   height: 84px !important;
   transition: all 0.3s ease !important;
@@ -16,13 +16,14 @@
 }
 
 /* Hover effect for the button container */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover {
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover {
   opacity: 0.7 !important;
   cursor: pointer !important;
 }
 
 /* Target both SVG and IMG when in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g) img.f6dof8t.f6dof8v.f6dof8g {
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
   width: 84px !important;
   height: 84px !important;
   border-radius: 42px !important;
@@ -33,11 +34,13 @@
 }
 
 /* Hover effect for the image/avatar itself */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8t.f6dof8v.f6dof8g):hover img.f6dof8t.f6dof8v.f6dof8g {
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover img.f6dof8u.f6dof8w.f6dof8h,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover img[alt="open chat"] {
   opacity: 1 !important;
 }
 
 /* Container for the image/svg */
+.f6dof87.f6dof89,
 .f6dof86.f6dof88 {
   width: 84px !important;
   height: 84px !important;
