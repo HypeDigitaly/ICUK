@@ -120,14 +120,14 @@ div._1emja3f9:has(#voiceflow-chat) {
   align-items: flex-end !important;
 }
 
-/* Button in opened state */
+/* Button in opened state - INCREASED SIZE TO 42x42 FROM 36x36 */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
   background-color: #FFCA00 !important;
   border-radius: 9999px !important;
   overflow: hidden !important;
@@ -147,30 +147,63 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
 
 /* Additional selectors for parent container in opened state */
 div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
 }
 
 /* Container for svg in opened state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
 }
 
-/* Arrow icon in opened state */
+/* Arrow icon in opened state - INCREASED PROPORTIONALLY */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 18px !important;
-  height: 18px !important;
+  width: 21px !important;
+  height: 21px !important;
   transform: none !important;
   object-fit: contain !important;
+}
+
+/* ================= BUTTON TEXT REPLACEMENT ================= */
+/* Replace "Open chat agent" with "Otevřít chatbot" */
+button[title="Open chat agent"] {
+  color: transparent !important;
+  position: relative !important;
+}
+
+button[title="Open chat agent"]::before {
+  content: "Otevřít chatbot" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+/* Replace "Close chat agent" with "Zavřít chatbot" */
+button[title="Close chat agent"] {
+  color: transparent !important;
+  position: relative !important;
+}
+
+button[title="Close chat agent"]::before {
+  content: "Zavřít chatbot" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
 }
 
 /* ================= OTHER STYLING ================= */
