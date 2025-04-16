@@ -1,4 +1,4 @@
-/* Main container positioning */
+/* Main container positioning - KEEP THIS INTACT */
 ._1emja3f9 {
   bottom: 30px !important;
   right: 30px !important;
@@ -46,6 +46,8 @@ div.f6dof87.f6dof89 {
   margin: 0 !important;
   box-sizing: content-box !important;
   transform: none !important;
+  bottom: 30px !important;
+  right: 30px !important;
 }
 
 /* Additional selectors for parent container in closed state */
@@ -125,6 +127,8 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  bottom: 30px !important;
+  right: 30px !important;
 }
 
 /* Additional selectors for parent container in opened state */
@@ -153,6 +157,14 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   height: 18px !important;
   transform: none !important;
   object-fit: contain !important;
+}
+
+/* Position the widget container consistently */
+._1emja3f9 {
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  z-index: 9999 !important;
 }
 
 /* ================= OTHER STYLING ================= */
