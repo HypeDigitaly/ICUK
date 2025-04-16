@@ -4,8 +4,9 @@
   right: 30px !important;
 }
 
-/* Button container - default state (when closed) */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 {
+/* ================= CLOSED STATE STYLING ================= */
+/* Button container with IMG (only in closed state) */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) {
   width: 72px !important;
   height: 72px !important;
   min-width: 72px !important;
@@ -27,14 +28,8 @@
   transform: none !important;
 }
 
-/* Hover effect for the button container */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover {
-  opacity: 0.7 !important;
-  cursor: pointer !important;
-}
-
-/* Target both SVG and IMG when in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
+/* Target the IMG in closed state specifically */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) img.f6dof8u.f6dof8w.f6dof8h,
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
   width: 72px !important;
   height: 72px !important;
@@ -56,17 +51,11 @@
   aspect-ratio: 1/1 !important;
 }
 
-/* Hover effect for the image/avatar itself */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover img.f6dof8u.f6dof8w.f6dof8h,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:hover img[alt="open chat"] {
-  opacity: 1 !important;
-}
-
-/* Container for the image/svg */
-.f6dof87.f6dof89,
-.f6dof86.f6dof88,
-div.f6dof87.f6dof89,
-div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
+/* Container for the image/svg in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) .f6dof87.f6dof89,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) .f6dof86.f6dof88,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
   width: 72px !important;
   height: 72px !important;
   min-width: 72px !important;
@@ -85,7 +74,14 @@ div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
   flex-shrink: 0 !important;
 }
 
-/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
+/* Hover effect for button in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]):hover {
+  opacity: 0.7 !important;
+  cursor: pointer !important;
+}
+
+/* ================= OPENED STATE STYLING ================= */
+/* Button with SVG arrow (only in opened state) */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
   width: 36px !important;
   height: 36px !important;
@@ -106,7 +102,7 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   justify-content: center !important;
 }
 
-/* POUZE šipka v otevřeném stavu */
+/* Arrow icon in opened state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
   width: 18px !important;
   height: 18px !important;
@@ -114,6 +110,7 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   object-fit: contain !important;
 }
 
+/* ================= OTHER STYLING ================= */
 /* Translation overlay styles - updated approach */
 /* Remove backgrounds and hide original text */
 .vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4,
@@ -200,8 +197,8 @@ button[label="Cancel"]::before {
 div[class*="1o69oyc2"] {
   color: transparent !important;
   position: relative !important;
-  text-align: center !important;  /* Přidáno pro centrování */
-  width: 100% !important;  /* Zajistí plnou šířku pro centrování */
+  text-align: center !important;
+  width: 100% !important;
 }
 
 div[class*="1o69oyc2"]::before {
