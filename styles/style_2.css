@@ -4,9 +4,29 @@
   right: 30px !important;
 }
 
+/* ================= RESET ALL BUTTON CONTAINERS FIRST ================= */
+/* Reset all button containers to remove potentially problematic default styling */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
+.vfrc-launcher,
+.f6dof81,
+.f6dof87.f6dof89,
+.f6dof86.f6dof88,
+div.f6dof87.f6dof89,
+div.f6dof8m.f6dof8o.f6dof8r.f6dof8f,
+div.f6dof87.f6dof89 {
+  width: auto !important;
+  height: auto !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
 /* ================= CLOSED STATE STYLING ================= */
-/* Button container with IMG (only in closed state) */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) {
+/* Parent containers in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]),
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8u.f6dof8w.f6dof8h) {
   width: 72px !important;
   height: 72px !important;
   min-width: 72px !important;
@@ -28,8 +48,32 @@
   transform: none !important;
 }
 
-/* Target the IMG in closed state specifically */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) img.f6dof8u.f6dof8w.f6dof8h,
+/* Additional selectors for parent container in closed state */
+div.f6dof80:has(img[alt="open chat"]) {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  min-height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+}
+
+/* Immediate image container in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof86.f6dof88 {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  min-height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Target the actual image in closed state */
+.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
   width: 72px !important;
   height: 72px !important;
@@ -51,37 +95,18 @@
   aspect-ratio: 1/1 !important;
 }
 
-/* Container for the image/svg in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) .f6dof87.f6dof89,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) .f6dof86.f6dof88,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
+/* Force parent containers in closed state */
+div.f6dof87.f6dof89:has(img[alt="open chat"]) {
   width: 72px !important;
   height: 72px !important;
   min-width: 72px !important;
   min-height: 72px !important;
   max-width: 72px !important;
   max-height: 72px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  overflow: visible !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  box-sizing: content-box !important;
-  transform: none !important;
-  aspect-ratio: 1/1 !important;
-  flex-shrink: 0 !important;
-}
-
-/* Hover effect for button in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]):hover {
-  opacity: 0.7 !important;
-  cursor: pointer !important;
 }
 
 /* ================= OPENED STATE STYLING ================= */
-/* Button with SVG arrow (only in opened state) */
+/* Parent container in opened state */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
   width: 36px !important;
   height: 36px !important;
@@ -100,6 +125,26 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+/* Additional selectors for parent container in opened state */
+div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+}
+
+/* Container for svg in opened state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
 }
 
 /* Arrow icon in opened state */
