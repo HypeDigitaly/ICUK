@@ -1,9 +1,3 @@
-/* Main container positioning */
-._1emja3f9 {
-  bottom: 30px !important;
-  right: 30px !important;
-}
-
 /* ================= RESET ALL BUTTON CONTAINERS FIRST ================= */
 /* Reset all button containers to remove potentially problematic default styling */
 .vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
@@ -21,6 +15,26 @@ div.f6dof87.f6dof89 {
   min-height: auto !important;
   max-width: none !important;
   max-height: none !important;
+}
+
+/* ================= MAIN CONTAINER STYLING (APPLIES TO BOTH STATES) ================= */
+/* Main container positioning */
+._1emja3f9 {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+/* CLOSED STATE - specific positioning */
+._1emja3f9:has(img[alt="open chat"]),
+._1emja3f9:not(:has(#voiceflow-chat)) {
+  bottom: 30px !important;
+  right: 30px !important;
+}
+
+/* OPENED STATE - specific positioning */
+._1emja3f9:has(#voiceflow-chat) {
+  bottom: 0 !important;
+  right: 0 !important;
 }
 
 /* ================= CLOSED STATE STYLING ================= */
@@ -46,6 +60,9 @@ div.f6dof87.f6dof89 {
   margin: 0 !important;
   box-sizing: content-box !important;
   transform: none !important;
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
 }
 
 /* Additional selectors for parent container in closed state */
@@ -95,19 +112,9 @@ div.f6dof80:has(img[alt="open chat"]) {
   aspect-ratio: 1/1 !important;
 }
 
-/* Force parent containers in closed state */
-div.f6dof87.f6dof89:has(img[alt="open chat"]) {
-  width: 72px !important;
-  height: 72px !important;
-  min-width: 72px !important;
-  min-height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-}
-
 /* ================= OPENED STATE STYLING ================= */
 /* Main container in opened state */
-div._1emja3f9:has(#voiceflow-chat):has(button:has(svg[viewBox="0 0 32 32"])) {
+div._1emja3f9:has(#voiceflow-chat) {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-end !important;
@@ -131,16 +138,11 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   align-items: center !important;
   justify-content: center !important;
   margin-top: 15px !important;
-  align-self: flex-end !important;
   margin-right: 15px !important;
-}
-
-/* Arrow icon in opened state */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 18px !important;
-  height: 18px !important;
-  transform: none !important;
-  object-fit: contain !important;
+  margin-bottom: 15px !important;
+  position: relative !important; /* Override fixed position from the default */
+  bottom: auto !important; /* Override bottom from the default */
+  right: auto !important; /* Override right from the default */
 }
 
 /* Additional selectors for parent container in opened state */
@@ -161,6 +163,14 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   min-height: 36px !important;
   max-width: 36px !important;
   max-height: 36px !important;
+}
+
+/* Arrow icon in opened state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
+  width: 18px !important;
+  height: 18px !important;
+  transform: none !important;
+  object-fit: contain !important;
 }
 
 /* ================= OTHER STYLING ================= */
