@@ -86,9 +86,14 @@ div.f6dof8m.f6dof8o.f6dof8r.f6dof8f {
 }
 
 /* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]),
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5[title="Close chat agent"] {
   width: 42px !important;
   height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
   background-color: #FFCA00 !important;
   border-radius: 9999px !important;
   margin-right: 0px !important;
@@ -103,11 +108,28 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
 }
 
 /* POUZE šipka v otevřeném stavu */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg,
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5[title="Close chat agent"] svg {
   width: 24px !important;
   height: 24px !important;
   transform: none !important;
   object-fit: contain !important;
+}
+
+/* Hide the image in open state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5[title="Close chat agent"] img,
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) img {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Hide any container that might be showing the image in open state */
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5[title="Close chat agent"] div:has(img),
+button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div:has(img) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 /* Translation overlay styles - updated approach */
