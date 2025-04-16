@@ -1,4 +1,4 @@
-/* Main container positioning - KEEP THIS INTACT */
+/* Main container positioning */
 ._1emja3f9 {
   bottom: 30px !important;
   right: 30px !important;
@@ -46,8 +46,6 @@ div.f6dof87.f6dof89 {
   margin: 0 !important;
   box-sizing: content-box !important;
   transform: none !important;
-  bottom: 30px !important;
-  right: 30px !important;
 }
 
 /* Additional selectors for parent container in closed state */
@@ -108,7 +106,7 @@ div.f6dof87.f6dof89:has(img[alt="open chat"]) {
 }
 
 /* ================= OPENED STATE STYLING ================= */
-/* Parent container in opened state */
+/* POUZE PRO OTEVŘENÝ STAV - button s šipkou */
 button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
   width: 36px !important;
   height: 36px !important;
@@ -118,7 +116,6 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   max-height: 36px !important;
   background-color: #FFCA00 !important;
   border-radius: 9999px !important;
-  position: absolute !important;
   overflow: hidden !important;
   transition: none !important;
   animation: none !important;
@@ -126,40 +123,6 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  margin: 0 !important;
-  z-index: 999 !important;
-}
-
-/* Positioning for opened state container */
-div._1emja3f9:has(svg[viewBox="0 0 32 32"]) {
-  position: fixed !important;
-  bottom: 0 !important;
-  right: 0 !important;
-}
-
-/* Additional selectors for parent container in opened state */
-div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
-  position: absolute !important;
-  bottom: 20px !important;
-  right: 20px !important;
-}
-
-/* Container for svg in opened state */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
 }
 
 /* Arrow icon in opened state */
@@ -168,12 +131,6 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   height: 18px !important;
   transform: none !important;
   object-fit: contain !important;
-}
-
-/* Position the widget container consistently */
-._1emja3f9 {
-  position: fixed !important;
-  z-index: 9999 !important;
 }
 
 /* ================= OTHER STYLING ================= */
