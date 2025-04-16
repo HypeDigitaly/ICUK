@@ -118,8 +118,7 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   max-height: 36px !important;
   background-color: #FFCA00 !important;
   border-radius: 9999px !important;
-  margin-right: 0px !important;
-  position: relative !important;
+  position: absolute !important;
   overflow: hidden !important;
   transition: none !important;
   animation: none !important;
@@ -127,8 +126,17 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  bottom: 30px !important;
-  right: 30px !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  margin: 0 !important;
+  z-index: 999 !important;
+}
+
+/* Positioning for opened state container */
+div._1emja3f9:has(svg[viewBox="0 0 32 32"]) {
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
 }
 
 /* Additional selectors for parent container in opened state */
@@ -139,6 +147,9 @@ div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
   min-height: 36px !important;
   max-width: 36px !important;
   max-height: 36px !important;
+  position: absolute !important;
+  bottom: 20px !important;
+  right: 20px !important;
 }
 
 /* Container for svg in opened state */
@@ -162,8 +173,6 @@ button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c
 /* Position the widget container consistently */
 ._1emja3f9 {
   position: fixed !important;
-  bottom: 30px !important;
-  right: 30px !important;
   z-index: 9999 !important;
 }
 
