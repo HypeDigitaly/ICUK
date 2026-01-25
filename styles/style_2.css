@@ -1,338 +1,485 @@
-/* ================= RESET ALL BUTTON CONTAINERS FIRST ================= */
-/* Reset all button containers to remove potentially problematic default styling */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5,
-.vfrc-launcher,
-.f6dof81,
-.f6dof87.f6dof89,
-.f6dof86.f6dof88,
-div.f6dof87.f6dof89,
-div.f6dof8m.f6dof8o.f6dof8r.f6dof8f,
-div.f6dof87.f6dof89 {
-  width: auto !important;
-  height: auto !important;
-  min-width: auto !important;
-  min-height: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-}
+/* ICUK - Voiceflow Widget Custom Styles */
+/* Brand: #F5A524 (orange), #C4841D (dark orange), #add8e6 (light blue) */
 
-/* ================= MAIN CONTAINER STYLING (APPLIES TO BOTH STATES) ================= */
-/* Main container positioning */
-._1emja3f9 {
-  position: fixed !important;
+/* === LAUNCHER CONTAINER === */
+.vfrc-launcher__container {
   z-index: 9999 !important;
 }
 
-/* CLOSED STATE - specific positioning */
-._1emja3f9:has(img[alt="open chat"]),
-._1emja3f9:not(:has(#voiceflow-chat)) {
-  bottom: 30px !important;
-  right: 30px !important;
-}
-
-/* OPENED STATE - specific positioning */
-._1emja3f9:has(#voiceflow-chat) {
-  bottom: 0 !important;
-  right: 0 !important;
-}
-
-/* ================= CLOSED STATE STYLING ================= */
-/* Parent containers in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]),
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(.f6dof8u.f6dof8w.f6dof8h) {
-  width: 72px !important;
-  height: 72px !important;
-  min-width: 72px !important;
-  min-height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-  transition: all 0.3s ease !important;
-  animation: none !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-radius: 36px !important;
-  overflow: visible !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  box-sizing: content-box !important;
-  transform: none !important;
-  position: fixed !important;
-  bottom: 30px !important;
-  right: 30px !important;
-}
-
-/* Additional selectors for parent container in closed state */
-div.f6dof80:has(img[alt="open chat"]) {
-  width: 72px !important;
-  height: 72px !important;
-  min-width: 72px !important;
-  min-height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-}
-
-/* Immediate image container in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof87.f6dof89,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(img[alt="open chat"]) div.f6dof86.f6dof88 {
-  width: 72px !important;
-  height: 72px !important;
-  min-width: 72px !important;
-  min-height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* Target the actual image in closed state */
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img.f6dof8u.f6dof8w.f6dof8h,
-.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5 img[alt="open chat"] {
-  width: 72px !important;
-  height: 72px !important;
-  min-width: 72px !important;
-  min-height: 72px !important;
-  max-width: 72px !important;
-  max-height: 72px !important;
-  border-radius: 36px !important;
-  border: 2px solid #000000 !important;
-  box-shadow: none !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  transition: all 0.3s ease !important;
-  display: block !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  box-sizing: content-box !important;
-  transform: none !important;
-  aspect-ratio: 1/1 !important;
-}
-
-/* ================= OPENED STATE STYLING ================= */
-/* Main container in opened state */
-div._1emja3f9:has(#voiceflow-chat) {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-end !important;
-}
-
-/* Button in opened state - INCREASED SIZE TO 42x42 FROM 36x36 */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) {
-  width: 42px !important;
-  height: 42px !important;
-  min-width: 42px !important;
-  min-height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-  background-color: #FFCA00 !important;
-  border-radius: 9999px !important;
-  overflow: hidden !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin-top: 15px !important;
-  margin-right: 15px !important;
-  margin-bottom: 15px !important;
-  position: relative !important; /* Override fixed position from the default */
-  bottom: auto !important; /* Override bottom from the default */
-  right: auto !important; /* Override right from the default */
-}
-
-/* Additional selectors for parent container in opened state */
-div.f6dof80:has(svg[viewBox="0 0 32 32"]) {
-  width: 42px !important;
-  height: 42px !important;
-  min-width: 42px !important;
-  min-height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-}
-
-/* Container for svg in opened state */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) div.f6dof87.f6dof89 {
-  width: 42px !important;
-  height: 42px !important;
-  min-width: 42px !important;
-  min-height: 42px !important;
-  max-width: 42px !important;
-  max-height: 42px !important;
-}
-
-/* Arrow icon in opened state - INCREASED PROPORTIONALLY */
-button.vfrc-button._1q15b0b0.c26d8x0._1q15b0b2.vfrc-launcher.f6dof81._1q15b0b0.c26d8x0._1q15b0b5:has(svg[viewBox="0 0 32 32"]) svg {
-  width: 21px !important;
-  height: 21px !important;
-  transform: none !important;
-  object-fit: contain !important;
-}
-
-/* ================= BUTTON TEXT REPLACEMENT ================= */
-/* Replace "Open chat agent" with "Otevřít chatbot" */
-button[title="Open chat agent"] {
-  color: transparent !important;
-  position: relative !important;
-}
-
-button[title="Open chat agent"]::before {
-  content: "Otevřít chatbot" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-}
-
-/* Replace "Close chat agent" with "Zavřít chatbot" */
-button[title="Close chat agent"] {
-  color: transparent !important;
-  position: relative !important;
-}
-
-button[title="Close chat agent"]::before {
-  content: "Zavřít chatbot" !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-}
-
-/* ================= OTHER STYLING ================= */
-/* Translation overlay styles - updated approach */
-/* Remove backgrounds and hide original text */
-.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4,
-button[label="Start new chat"],
-button[label="Cancel"],
-#vfrc-start-chat {
+/* === LAUNCHER - CLOSED STATE (title="Open chat agent") === */
+.vfrc-launcher[title="Open chat agent"] {
   background: transparent !important;
   border: none !important;
-  color: transparent !important;
-  position: relative !important;
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  overflow: visible !important;
+  background-image: url("https://pub-78d23252e3324567b5ee23d57acddddd.r2.dev/public/4yv7tg7z_.webp") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: transparent !important;
 }
 
-/* Hide all original text contents */
-.vfrc-button_lytjiy0_l7qb7gk0_lytjiv2_lytjiv4 span,
-button[label="Start new chat"] span,
-button[label="Cancel"] span,
-#vfrc-start-chat span {
+.vfrc-launcher[title="Open chat agent"] .vfrc-launcher__inner {
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+}
+
+.vfrc-launcher[title="Open chat agent"] .vfrc-launcher__chevron {
   display: none !important;
 }
 
-/* Start new chat translation - all variations */
-button[label="Start new chat"],
-#vfrc-start-chat {
-  background-color: #FFCA00 !important;
-  border-radius: 4px !important;
-  padding: 10px 20px !important;
+.vfrc-launcher[title="Open chat agent"] .vfrc-launcher--media-icon {
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: none !important;
 }
 
-button[label="Start new chat"]::before,
-#vfrc-start-chat::before {
-  content: "Začít nový chat" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: white !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
-  font-family: Arial, sans-serif !important;
-  font-size: 16px !important;
+.vfrc-launcher[title="Open chat agent"]:hover {
+  transform: scale(1.1) !important;
+  opacity: 0.8 !important;
+  transition: transform 150ms ease 0s !important;
 }
 
-/* Cancel translation */
-button[label="Cancel"] {
-  background-color: #FFCA00 !important;
-  border-radius: 4px !important;
-  padding: 10px 20px !important;
+/* === LAUNCHER - OPENED STATE (title="Close chat agent") === */
+.vfrc-launcher[title="Close chat agent"] {
+  background: #F5A524 !important;
+  border: none !important;
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  background-image: none !important;
 }
 
-button[label="Cancel"]::before {
-  content: "Zavřít" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: white !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
-  font-family: Arial, sans-serif !important;
-  font-size: 16px !important;
+.vfrc-launcher[title="Close chat agent"]:hover {
+  background: #C4841D !important;
 }
 
-/* Message text alignment */
-.vfrc-message {
-  text-align: left !important;
-  justify-content: flex-start !important;
+.vfrc-launcher[title="Close chat agent"] .vfrc-launcher__inner {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
 }
 
-/* Ensure message content is also left-aligned */
-.vfrc-message > * {
-  text-align: left !important;
-  margin-left: 0 !important;
-}
-
-/* In case there are any flex containers within the message */
-.vfrc-message div {
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-}
-
-/* Aktualizovaný styl pro "Chat has ended" text */
-div[class*="1o69oyc2"] {
-  color: transparent !important;
-  position: relative !important;
-  text-align: center !important;
-  width: 100% !important;
-}
-
-div[class*="1o69oyc2"]::before {
-  content: "Chat byl ukončen" !important;
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  color: #FFCA00 !important;
-  white-space: nowrap !important;
-  pointer-events: none !important;
-  z-index: 2 !important;
-  font-family: "Open Sans", Arial, sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  line-height: 1.5 !important;
-  letter-spacing: normal !important;
+.vfrc-launcher[title="Close chat agent"] .vfrc-launcher__chevron {
   display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  color: white !important;
+}
+
+.vfrc-launcher[title="Close chat agent"] .vfrc-launcher__chevron path {
+  fill: white !important;
+}
+
+.vfrc-launcher[title="Close chat agent"] .vfrc-launcher--media-icon {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* === CHAT CONTAINER === */
+.vfrc-chat__container,
+.vfrc-chat__container-inner,
+.vfrc-chat {
+  border-radius: 16px !important;
+}
+
+.vfrc-chat__container {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  overflow: hidden !important;
+}
+
+@media screen and (min-width: 768px) {
+  .vfrc-widget--chat {
+    border-radius: 20px;
+  }
+}
+
+/* === HEADER === */
+.vfrc-header {
+  background: #F5A524 !important;
+  color: white !important;
+  height: 66px;
+}
+
+.vfrc-header .vfrc-avatar {
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.vfrc-header--title {
+  color: #fffffffa !important;
+  font-size: 16px !important;
+}
+
+.vfrc-header--button,
+.vfrc-header--icon,
+.vfrc-header--icon svg {
+  color: white !important;
+}
+
+.vfrc-header--icon svg {
+  fill: white !important;
+}
+
+.vfrc-header--button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+  cursor: pointer !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 8px !important;
+  height: 32px !important;
+  width: 32px !important;
+  transition: all 100ms ease 0s !important;
+}
+
+.vfrc-header--button:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.vfrc-header--button:nth-of-type(1) .vfrc-icon,
+.vfrc-header--button:nth-of-type(2) .vfrc-icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* === MESSAGES === */
+.vfrc-message,
+.vfrc-system-response,
+.vfrc-system-response--container,
+.vfrc-message .markdown,
+.vfrc-message .markdown p {
+  text-align: left !important;
+}
+
+.vfrc-message {
+  font-weight: 400 !important;
+  border-radius: 20px !important;
+}
+
+.vfrc-system-response--action .vfrc-button,
+.vfrc-button--secondary {
+  background: transparent !important;
+  color: #002b45 !important;
+  border: 1px solid #F5A524 !important;
+  border-radius: 20px !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  padding: 9px 13px !important;
+  margin: 0px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  transition: background-color 50ms ease-in-out 0s, border-color 100ms ease-in-out 0s !important;
+  white-space: normal !important;
+  text-align: left !important;
+}
+
+.vfrc-system-response--action .vfrc-button:hover,
+.vfrc-button--secondary:hover {
+  background: #add8e6 !important;
+  border-color: rgba(0, 43, 69, 0.7) !important;
+}
+
+.vfrc-system-response .vfrc-avatar {
+  border: 2px solid #add8e6 !important;
+}
+
+/* User message styling */
+.c-PJLV-gJqBfM-from-user {
+  background-color: #C4841D !important;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.c-PJLV-jueArD-from-system {
+  text-align: left !important;
+}
+
+/* === INPUT & FOOTER === */
+.vfrc-footer {
+  background: white !important;
+}
+
+.vfrc-input-container,
+.c-fYYkXN {
+  border: 1px solid #ccc !important;
+  border-radius: 24px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.vfrc-input-container:focus-within {
+  border-color: #F5A524 !important;
+  box-shadow: 0 0 0 2px rgba(245, 165, 36, 0.1) !important;
+}
+
+.vfrc-chat-focus-ring {
+  border-color: #F5A524 !important;
+}
+
+.vfrc-chat-input__send,
+.vfrc-footer__content-scroll-to-bottom-button {
+  background: #F5A524 !important;
+  color: white !important;
+  border-radius: 50% !important;
+}
+
+.vfrc-chat-input__send:hover:not(:disabled) {
+  background: #C4841D !important;
+}
+
+.vfrc-chat-input__send:disabled {
+  background: #ccc !important;
+  opacity: 0.6 !important;
+}
+
+.vfrc-chat-input__send-icon {
+  color: white !important;
+}
+
+.vfrc-chat-input__audio-input,
+.vfrc-chat-input__audio-input-icon {
+  color: #F5A524 !important;
+}
+
+.vfrc-chat-input__audio-input:hover {
+  color: #C4841D !important;
+}
+
+.vfrc-chat-input--button {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border: 1px solid #ccc !important;
+  margin-left: -1px !important;
+}
+
+.vfrc-chat-input textarea,
+.vfrc-chat-input--button {
+  color: #000000 !important;
+}
+
+#vfrc-start-chat,
+.vfrc-footer__start-button .vfrc-button {
+  background: #F5A524 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  border: none !important;
+}
+
+#vfrc-start-chat:hover,
+.vfrc-footer__start-button .vfrc-button:hover {
+  background: #C4841D !important;
+}
+
+/* === PRIVACY SCREEN === */
+.vfrc-privacy {
+  background: white !important;
+  border-radius: 16px !important;
+}
+
+.vfrc-privacy__title {
+  color: #F5A524 !important;
+  font-weight: 600 !important;
+}
+
+.vfrc-privacy__description {
+  color: #666 !important;
+}
+
+.vfrc-privacy__primary-button {
+  background: #F5A524 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.vfrc-privacy__primary-button:hover {
+  background: #C4841D !important;
+}
+
+.vfrc-privacy__secondary-button {
+  color: #F5A524 !important;
+  border: 1px solid #F5A524 !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+}
+
+.vfrc-privacy__secondary-button:hover {
+  background: #add8e6 !important;
+}
+
+.vfrc-privacy__secondary-button-icon,
+.vfrc-privacy__secondary-button-label {
+  color: #F5A524 !important;
+}
+
+/* === ASSISTANT INFO === */
+.vfrc-assistant-info {
   text-align: center !important;
 }
 
-/* ADDED TEXT ALIGNMENT FIX */
-/* For all chat message containers */
-.vfrc-message,
-div[class*="vfrc-chat-dialog"],
-div[class*="knxm730"],
-div[class*="_15emaa"],
-div[class*="vfrc-user-response"],
-div[class*="vfrc-system-response"],
-div[class*="g3dqfd"],
-div[class*="response-content"],
-div[class*="streaming-response-container"] {
-  text-align: left !important;
+.vfrc-assistant-info--avatar {
+  border: 3px solid #F5A524 !important;
+  border-radius: 50% !important;
 }
 
-/* For text elements */
-.vfrc-message span,
-.vfrc-message p,
-div[class*="vfrc-message"] * {
+.vfrc-assistant-info--title {
+  color: #000000 !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.vfrc-assistant-info--description {
+  color: rgb(17, 24, 28) !important;
+}
+
+/* === FOOTER LINKS === */
+.vfrc-footer__links-extra-text,
+.c-cejRVw {
+  color: #000dff !important;
+  font-size: 12px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px 0 var(--space-3) 0 !important;
+  font-weight: 400 !important;
+  line-height: 17px !important;
+}
+
+.vfrc-footer__links-extra-text:hover,
+.c-cejRVw a {
+  color: #F5A524 !important;
+}
+
+.vfrc-footer--watermark {
+  color: #F5A524 !important;
+}
+
+/* === CHAT DIALOG === */
+.vfrc-chat-dialog__container,
+.vfrc-chat-dialog {
+  background: #fafafa !important;
+  flex: 1 1 0px !important;
+  overflow: hidden !important;
+  min-height: 0px !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+  position: relative !important;
+  direction: ltr !important;
+}
+
+/* === OVERLAY === */
+.vfrc-popper__overlay {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* === ICUK-SPECIFIC EXTRAS === */
+
+/* Proactive message styling */
+.vfrc-proactive-message {
+  border: #F5A524 1px solid !important;
   text-align: left !important;
+  font-weight: 700 !important;
+}
+
+/* Cancel chat button */
+.c-bXTvXv-igaDqE-type-subtle {
+  background-color: #F5A524 !important;
+  color: #ffffff !important;
+}
+
+.c-bXTvXv-igaDqE-type-subtle:hover {
+  color: #ffffff !important;
+}
+
+/* Info button type */
+.c-bXTvXv-lckiv-type-info {
+  background-color: #F5A524 !important;
+}
+
+.c-bXTvXv-lckiv-type-info:hover {
+  background-color: #F5A524 !important;
+}
+
+/* Widget animation */
+.vfrc-widget--chat {
+  animation: fadeInChat 1s ease-out;
+}
+
+/* Launcher animation */
+.vfrc-launcher {
+  animation: fadeIn 0.5s ease-in-out !important;
+  transition: transform 150ms ease 0s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Avatar small styling */
+.c-kIbiaN-iiTsXc-size-small.c-kIbiaN-igKTkkE-css {
+  width: 35px !important;
+  height: 35px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: #ffffff !important;
+}
+
+/* Avatar large sizing */
+.c-kIbiaN-eyfkxi-size-large {
+  width: 72px !important;
+  height: 72px !important;
+  background-color: rgb(255 255 255) !important;
+}
+
+/* Header avatar container */
+.c-iCDrnV .c-kIbiaN {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #F5A524 !important;
+}
+
+/* Hide launcher image */
+.c-bQoszf > img {
+  display: none !important;
 }
