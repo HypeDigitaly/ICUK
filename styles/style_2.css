@@ -114,6 +114,24 @@
 .vfrc-chat__container {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
   overflow: hidden !important;
+  z-index: 10000 !important; /* Higher than launcher to prevent overlap */
+}
+
+/* === MOBILE Z-INDEX FIX === */
+/* On mobile, ensure the chat widget is above the launcher button */
+@media (max-width: 768px) {
+  .vfrc-chat__container {
+    z-index: 10001 !important;
+  }
+
+  /* Lower launcher z-index when widget is open (close button visible) */
+  .vfrc-launcher[title="Close chat agent"] {
+    z-index: 9998 !important;
+  }
+
+  .vfrc-launcher__container:has(.vfrc-launcher[title="Close chat agent"]) {
+    z-index: 9998 !important;
+  }
 }
 
 /* === HEADER === */
