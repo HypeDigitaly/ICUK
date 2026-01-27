@@ -18,13 +18,9 @@
   max-height: 100px !important;
   padding: 0 !important;
   border-radius: 50% !important;
-  box-shadow: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   cursor: pointer !important;
   overflow: visible !important;
-  background-image: url("https://pub-78d23252e3324567b5ee23d57acddddd.r2.dev/public/4yv7tg7z_.webp") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-color: transparent !important;
 }
 
 .vfrc-launcher[title="Open chat agent"] .vfrc-launcher__inner {
@@ -49,13 +45,12 @@
   min-height: 100px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  display: none !important;
+  display: block !important;
 }
 
-.vfrc-launcher[title="Open chat agent"]:hover {
-  transform: scale(1.1) !important;
-  opacity: 0.8 !important;
-  transition: transform 150ms ease 0s !important;
+.vfrc-launcher[title="Open chat agent"]:hover .vfrc-launcher--media-icon {
+  transform: scale(1.02) !important;
+  transition: transform 0.2s ease !important;
 }
 
 /* === LAUNCHER - OPENED STATE (title="Close chat agent") === */
@@ -73,7 +68,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
   cursor: pointer !important;
   overflow: hidden !important;
-  background-image: none !important;
 }
 
 .vfrc-launcher[title="Close chat agent"]:hover {
@@ -122,28 +116,17 @@
   overflow: hidden !important;
 }
 
-@media screen and (min-width: 768px) {
-  .vfrc-widget--chat {
-    border-radius: 20px;
-  }
-}
-
 /* === HEADER === */
 .vfrc-header {
-  background: #F5A524 !important;
+  background: linear-gradient(135deg, #F5A524 0%, #C4841D 100%) !important;
   color: white !important;
-  height: 66px;
 }
 
 .vfrc-header .vfrc-avatar {
   border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-.vfrc-header--title {
-  color: #fffffffa !important;
-  font-size: 16px !important;
-}
-
+.vfrc-header--title,
 .vfrc-header--button,
 .vfrc-header--icon,
 .vfrc-header--icon svg {
@@ -157,23 +140,10 @@
 .vfrc-header--button {
   background: transparent !important;
   border: none !important;
-  padding: 0px !important;
-  cursor: pointer !important;
-  color: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 8px !important;
-  height: 32px !important;
-  width: 32px !important;
-  transition: all 100ms ease 0s !important;
 }
 
 .vfrc-header--button:hover {
   background: rgba(255, 255, 255, 0.15) !important;
-}
-
-.vfrc-header--button:nth-of-type(1) .vfrc-icon,
-.vfrc-header--button:nth-of-type(2) .vfrc-icon {
-  width: 24px !important;
-  height: 24px !important;
 }
 
 /* === MESSAGES === */
@@ -185,48 +155,20 @@
   text-align: left !important;
 }
 
-.vfrc-message {
-  font-weight: 400 !important;
-  border-radius: 20px !important;
-}
-
-.vfrc-system-response--action .vfrc-button,
-.vfrc-button--secondary {
-  background: transparent !important;
-  color: #002b45 !important;
+.vfrc-system-response--action .vfrc-button {
+  background: #add8e6 !important;
+  color: #F5A524 !important;
   border: 1px solid #F5A524 !important;
   border-radius: 20px !important;
-  display: inline-block !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  padding: 9px 13px !important;
-  margin: 0px !important;
-  box-sizing: border-box !important;
-  cursor: pointer !important;
-  transition: background-color 50ms ease-in-out 0s, border-color 100ms ease-in-out 0s !important;
-  white-space: normal !important;
-  text-align: left !important;
 }
 
-.vfrc-system-response--action .vfrc-button:hover,
-.vfrc-button--secondary:hover {
-  background: #add8e6 !important;
-  border-color: rgba(0, 43, 69, 0.7) !important;
+.vfrc-system-response--action .vfrc-button:hover {
+  background: #F5A524 !important;
+  color: white !important;
 }
 
 .vfrc-system-response .vfrc-avatar {
   border: 2px solid #add8e6 !important;
-}
-
-/* User message styling */
-.c-PJLV-gJqBfM-from-user {
-  background-color: #C4841D !important;
-  color: #ffffff !important;
-  text-align: left !important;
-}
-
-.c-PJLV-jueArD-from-system {
-  text-align: left !important;
 }
 
 /* === INPUT & FOOTER === */
@@ -234,12 +176,9 @@
   background: white !important;
 }
 
-.vfrc-input-container,
-.c-fYYkXN {
-  border: 1px solid #ccc !important;
+.vfrc-input-container {
+  border: 1px solid #e0e0e0 !important;
   border-radius: 24px !important;
-  border-top-left-radius: 20px !important;
-  border-bottom-left-radius: 20px !important;
 }
 
 .vfrc-input-container:focus-within {
@@ -278,18 +217,6 @@
 
 .vfrc-chat-input__audio-input:hover {
   color: #C4841D !important;
-}
-
-.vfrc-chat-input--button {
-  border-top-right-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
-  border: 1px solid #ccc !important;
-  margin-left: -1px !important;
-}
-
-.vfrc-chat-input textarea,
-.vfrc-chat-input--button {
-  color: #000000 !important;
 }
 
 #vfrc-start-chat,
@@ -358,128 +285,30 @@
 }
 
 .vfrc-assistant-info--title {
-  color: #000000 !important;
-  font-size: 20px !important;
+  color: #F5A524 !important;
   font-weight: 600 !important;
 }
 
 .vfrc-assistant-info--description {
-  color: rgb(17, 24, 28) !important;
+  color: #666 !important;
 }
 
 /* === FOOTER LINKS === */
-.vfrc-footer__links-extra-text,
-.c-cejRVw {
-  color: #000dff !important;
-  font-size: 12px !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 10px 0 var(--space-3) 0 !important;
-  font-weight: 400 !important;
-  line-height: 17px !important;
+.vfrc-footer__links-extra-text {
+  color: #888 !important;
+  font-size: 11px !important;
 }
 
-.vfrc-footer__links-extra-text:hover,
-.c-cejRVw a {
-  color: #F5A524 !important;
-}
-
-.vfrc-footer--watermark {
+.vfrc-footer__links-extra-text:hover {
   color: #F5A524 !important;
 }
 
 /* === CHAT DIALOG === */
-.vfrc-chat-dialog__container,
-.vfrc-chat-dialog {
+.vfrc-chat-dialog__container {
   background: #fafafa !important;
-  flex: 1 1 0px !important;
-  overflow: hidden !important;
-  min-height: 0px !important;
-  color: rgba(0, 0, 0, 0.85) !important;
-  position: relative !important;
-  direction: ltr !important;
 }
 
 /* === OVERLAY === */
 .vfrc-popper__overlay {
   background: rgba(0, 0, 0, 0.3) !important;
-}
-
-/* === ICUK-SPECIFIC EXTRAS === */
-
-/* Proactive message styling */
-.vfrc-proactive-message {
-  border: #F5A524 1px solid !important;
-  text-align: left !important;
-  font-weight: 700 !important;
-}
-
-/* Cancel chat button */
-.c-bXTvXv-igaDqE-type-subtle {
-  background-color: #F5A524 !important;
-  color: #ffffff !important;
-}
-
-.c-bXTvXv-igaDqE-type-subtle:hover {
-  color: #ffffff !important;
-}
-
-/* Info button type */
-.c-bXTvXv-lckiv-type-info {
-  background-color: #F5A524 !important;
-}
-
-.c-bXTvXv-lckiv-type-info:hover {
-  background-color: #F5A524 !important;
-}
-
-/* Widget animation */
-.vfrc-widget--chat {
-  animation: fadeInChat 1s ease-out;
-}
-
-/* Launcher animation */
-.vfrc-launcher {
-  animation: fadeIn 0.5s ease-in-out !important;
-  transition: transform 150ms ease 0s !important;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Avatar small styling */
-.c-kIbiaN-iiTsXc-size-small.c-kIbiaN-igKTkkE-css {
-  width: 35px !important;
-  height: 35px !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-color: #ffffff !important;
-}
-
-/* Avatar large sizing */
-.c-kIbiaN-eyfkxi-size-large {
-  width: 72px !important;
-  height: 72px !important;
-  background-color: rgb(255 255 255) !important;
-}
-
-/* Header avatar container */
-.c-iCDrnV .c-kIbiaN {
-  width: 40px !important;
-  height: 40px !important;
-  background-color: #F5A524 !important;
-}
-
-/* Hide launcher image */
-.c-bQoszf > img {
-  display: none !important;
 }

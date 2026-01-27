@@ -415,6 +415,55 @@
   font-weight: 700 !important;
 }
 
+/* Hide proactive message when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ .vfrc-proactive-message,
+.vfrc-chat__container ~ .vfrc-proactive-message__container,
+.vfrc-widget--chat-open .vfrc-proactive-message,
+.vfrc-widget--chat-open .vfrc-proactive-message__container {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* === PROACTIVE CARDS (Updated selector for current Voiceflow widget) === */
+/* Voiceflow uses class "vfrc-proactive__cards" with underscore, not "vfrc-proactive-message" */
+
+/* Proactive cards styling */
+div[class*="vfrc-proactive__cards"] {
+  position: relative !important;
+  z-index: 0 !important;
+  border-radius: 10px !important;
+  border: #F5A524 1px solid !important;
+  text-align: left !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  transform-origin: center center !important;
+}
+
+div[class*="vfrc-proactive__cards"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hide proactive cards when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ div[class*="vfrc-proactive__cards"],
+.vfrc-chat__container ~ div[class*="vfrc-proactive__cards"],
+.vfrc-widget--chat-open div[class*="vfrc-proactive__cards"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Hide entire proactive container when chat is open */
+.vfrc-launcher[title="Close chat agent"] ~ div.vfrc-proactive,
+.vfrc-launcher[title="Close chat agent"] ~ div[class*="vfrc-proactive "],
+.vfrc-widget--chat-open div.vfrc-proactive,
+.vfrc-widget--chat-open div[class*="vfrc-proactive "] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 /* Cancel chat button */
 .c-bXTvXv-igaDqE-type-subtle {
   background-color: #F5A524 !important;
