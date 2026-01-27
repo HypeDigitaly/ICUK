@@ -123,7 +123,7 @@
 }
 
 .vfrc-header .vfrc-avatar {
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border: none !important;
 }
 
 .vfrc-header--title,
@@ -156,7 +156,7 @@
 }
 
 .vfrc-system-response--action .vfrc-button {
-  background: #add8e6 !important;
+  background: #ffffff !important;
   color: #F5A524 !important;
   border: 1px solid #F5A524 !important;
   border-radius: 20px !important;
@@ -168,7 +168,7 @@
 }
 
 .vfrc-system-response .vfrc-avatar {
-  border: 2px solid #add8e6 !important;
+  border: none !important;
 }
 
 /* === INPUT & FOOTER === */
@@ -280,7 +280,7 @@
 }
 
 .vfrc-assistant-info--avatar {
-  border: 3px solid #F5A524 !important;
+  border: none !important;
   border-radius: 50% !important;
 }
 
